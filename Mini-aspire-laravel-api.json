@@ -52,10 +52,6 @@
                     "enabled": true,
                     "name": "interest_rate",
                     "value": "2"
-                  },
-                  {
-                    "name": "",
-                    "value": ""
                   }
                 ]
               },
@@ -69,14 +65,6 @@
             "id": "055f47a8-698b-4500-9c48-778ebdaf779f",
             "name": "Create Loan",
             "headers": [
-              {
-                "name": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "name": "Bearer",
-                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdlMWVmNTVmMGQ4MmI2MWI5ZmNkZTQ1YWQ0ZTkwNDQxZWU4YzBlNWE0ZTNiNTg2NTc1NDAzYWQxYmYwNWMzYzZkOTQ5ODU3MTFkNWIzY2JiIn0.eyJhdWQiOiIxIiwianRpIjoiN2UxZWY1NWYwZDgyYjYxYjlmY2RlNDVhZDRlOTA0NDFlZThjMGU1YTRlM2I1ODY1NzU0MDNhZDFiZjA1YzNjNmQ5NDk4NTcxMWQ1YjNjYmIiLCJpYXQiOjE2MjQyMDMzMjAsIm5iZiI6MTYyNDIwMzMyMCwiZXhwIjoxNjU1NzM5MzIwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.HEpBJvlWo8mxmUTsbbIXRRIXEBCoRW6sVEWpHUPAmMg-B7vzx7NORfRjZZ-GalB08OmgiIFnA3Hr5Mwl0GPiMtmVzVMylKcLpRHLlxNg75hoz0y-BbK17UJqVB9OuwlDHfr0Fxljc5BXMrhw8SaNJnsDHx5FKP2zSzjWubHk_3it9PzRVuyylw2pG6xmEUamPYNW3bEpYLMu9FCdE5X_v23FFWOiqz9Se2xdYfhP193k7t_zZKjAUdCvIiJ3LfgAFFt8dp8oVSgOmpxUL4i8irJi1Hgh3kGyMZGwZ0SHgrn-vHj0EBo5N9Jt5DVdhLnhafDxssj-1CEF5vij79m3fEp0Q3bDKuG2_60jnO2V-kKxZj8h3JgawoSX8WV_xizjL6j3y9i9Ttf92py9uXaUvFu6iLMroKWIg_frMg_13Y-8alT-GYxMdgRepWqZOmPYbtzsW8WJDto7UE96V1rtI2OV-H2wa_T79QJ_p9w9UCaekjw3hvicRBrYtmDS-V0jxju5FMLDrxRUnU8YQqhsIUsu2pkC10CUni7IgPcepziZZ2FvbGTVzrp8AI0bBw8IYL93TdSEQwsl2LoJ0_ARPwPrVw-XbUcX-oNq5vLb2buHueE1_IndCCxywtwq8AchwFXk0sV75U0nNuUbeDP5591nT-fZINHnRckMiUST-ek"
-              },
               {
                 "enabled": true,
                 "name": "Accept",
@@ -297,14 +285,6 @@
             "id": "bf41cbcf-690c-44ad-b879-88560f6e5a33",
             "name": "Repayment Loan",
             "headers": [
-              {
-                "name": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "name": "Bearer",
-                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdlMWVmNTVmMGQ4MmI2MWI5ZmNkZTQ1YWQ0ZTkwNDQxZWU4YzBlNWE0ZTNiNTg2NTc1NDAzYWQxYmYwNWMzYzZkOTQ5ODU3MTFkNWIzY2JiIn0.eyJhdWQiOiIxIiwianRpIjoiN2UxZWY1NWYwZDgyYjYxYjlmY2RlNDVhZDRlOTA0NDFlZThjMGU1YTRlM2I1ODY1NzU0MDNhZDFiZjA1YzNjNmQ5NDk4NTcxMWQ1YjNjYmIiLCJpYXQiOjE2MjQyMDMzMjAsIm5iZiI6MTYyNDIwMzMyMCwiZXhwIjoxNjU1NzM5MzIwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.HEpBJvlWo8mxmUTsbbIXRRIXEBCoRW6sVEWpHUPAmMg-B7vzx7NORfRjZZ-GalB08OmgiIFnA3Hr5Mwl0GPiMtmVzVMylKcLpRHLlxNg75hoz0y-BbK17UJqVB9OuwlDHfr0Fxljc5BXMrhw8SaNJnsDHx5FKP2zSzjWubHk_3it9PzRVuyylw2pG6xmEUamPYNW3bEpYLMu9FCdE5X_v23FFWOiqz9Se2xdYfhP193k7t_zZKjAUdCvIiJ3LfgAFFt8dp8oVSgOmpxUL4i8irJi1Hgh3kGyMZGwZ0SHgrn-vHj0EBo5N9Jt5DVdhLnhafDxssj-1CEF5vij79m3fEp0Q3bDKuG2_60jnO2V-kKxZj8h3JgawoSX8WV_xizjL6j3y9i9Ttf92py9uXaUvFu6iLMroKWIg_frMg_13Y-8alT-GYxMdgRepWqZOmPYbtzsW8WJDto7UE96V1rtI2OV-H2wa_T79QJ_p9w9UCaekjw3hvicRBrYtmDS-V0jxju5FMLDrxRUnU8YQqhsIUsu2pkC10CUni7IgPcepziZZ2FvbGTVzrp8AI0bBw8IYL93TdSEQwsl2LoJ0_ARPwPrVw-XbUcX-oNq5vLb2buHueE1_IndCCxywtwq8AchwFXk0sV75U0nNuUbeDP5591nT-fZINHnRckMiUST-ek"
-              },
               {
                 "enabled": true,
                 "name": "Accept",
