@@ -12,8 +12,8 @@ class LoansController extends Controller
 	 /**
      * Author  : Rohit
      * Method  : create.
-     * View    : API
-     * Purpose : Create NeLoan Request
+     * View    : 
+     * Purpose : Create New Loan Request
      * @param    Loan Basic
      * @since :   June 2021
     */
@@ -59,7 +59,7 @@ class LoansController extends Controller
 	 /**
      * Author  : Rohit
      * Method  : Index.
-     * View    : API
+     * View    : 
      * Purpose : Index page 
      * @param    
      * @since :   June 2021
@@ -75,7 +75,7 @@ class LoansController extends Controller
 	 /**
      * Author  : Rohit
      * Method  : show.
-     * View    : API
+     * View    : 
      * Purpose : Index page 
      * @param    
      * @since :   June 2021

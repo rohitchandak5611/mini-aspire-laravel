@@ -11,9 +11,9 @@ class RepaymentsController extends Controller
 {
 	
 	 /**
-     * Author  : Devit
+     * Author  : Rohit
      * Method  : create.
-     * View    : API
+     * View    : 
      * Purpose : Repayment Calculations and creation if not any existing loan payment pending
      * @param   Repayment amount, method
      * @since : June 2021
