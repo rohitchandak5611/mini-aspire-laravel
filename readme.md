@@ -24,3 +24,5 @@ The task is defined below:
 (D) API Json
 https://github.com/rohitchandak5611/mini-aspire-laravel/blob/master/Mini-aspire-laravel-api.json
 
+(E) PHP version 7.1 +
+
