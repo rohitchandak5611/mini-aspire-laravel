@@ -20,3 +20,7 @@ The task is defined below:
 (C)Third-party Packages Used
 
 - [Laravel Passport](https://laravel.com/docs/passport)
+
+(D) API Json
+https://github.com/rohitchandak5611/mini-aspire-laravel/blob/master/Mini-aspire-laravel-api.json
+
