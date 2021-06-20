@@ -9,6 +9,15 @@ use App\Models\Loan;
 
 class RepaymentsController extends Controller
 {
+	
+	 /**
+     * Author  : Devit
+     * Method  : create.
+     * View    : API
+     * Purpose : Repayment Calculations and creation if not any existing loan payment pending
+     * @param   Repayment amount, method
+     * @since : June 2021
+    */
     public function create()
     {
         $rules = [

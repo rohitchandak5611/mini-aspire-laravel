@@ -9,6 +9,14 @@ use App\Models\Loan;
 
 class LoansController extends Controller
 {
+	 /**
+     * Author  : Rohit
+     * Method  : create.
+     * View    : API
+     * Purpose : Create NeLoan Request
+     * @param    Loan Basic
+     * @since :   June 2021
+    */
     public function create()
     {
         $rules = [
@@ -47,6 +55,15 @@ class LoansController extends Controller
 
         return $this->respondWithError('Data validation failed.', $response);
     }
+	
+	 /**
+     * Author  : Rohit
+     * Method  : Index.
+     * View    : API
+     * Purpose : Index page 
+     * @param    
+     * @since :   June 2021
+    */
 
     public function index()
     {
@@ -54,6 +71,15 @@ class LoansController extends Controller
 
         return $this->respondWithSuccess('Loan history loaded.', ['loans' => LoanResource::collection($loans)]);
     }
+
+	 /**
+     * Author  : Rohit
+     * Method  : show.
+     * View    : API
+     * Purpose : Index page 
+     * @param    
+     * @since :   June 2021
+    */
 
     public function show($id)
     {
