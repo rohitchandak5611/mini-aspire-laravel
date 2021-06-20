@@ -1,0 +1,324 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "dc954fce-0616-4de6-94cd-1fa4a29a9ad0",
+        "name": "Mini-aspire-laravel-API"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "approved_amount",
+                    "value": "100000"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "loan_tenor",
+                    "value": "5"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "currency",
+                    "value": "ruppes"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "origination_fee_percentage",
+                    "value": "5"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "interest_rate",
+                    "value": "2"
+                  },
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/api/v1/loans/create"
+            },
+            "id": "055f47a8-698b-4500-9c48-778ebdaf779f",
+            "name": "Create Loan",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Bearer",
+                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdlMWVmNTVmMGQ4MmI2MWI5ZmNkZTQ1YWQ0ZTkwNDQxZWU4YzBlNWE0ZTNiNTg2NTc1NDAzYWQxYmYwNWMzYzZkOTQ5ODU3MTFkNWIzY2JiIn0.eyJhdWQiOiIxIiwianRpIjoiN2UxZWY1NWYwZDgyYjYxYjlmY2RlNDVhZDRlOTA0NDFlZThjMGU1YTRlM2I1ODY1NzU0MDNhZDFiZjA1YzNjNmQ5NDk4NTcxMWQ1YjNjYmIiLCJpYXQiOjE2MjQyMDMzMjAsIm5iZiI6MTYyNDIwMzMyMCwiZXhwIjoxNjU1NzM5MzIwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.HEpBJvlWo8mxmUTsbbIXRRIXEBCoRW6sVEWpHUPAmMg-B7vzx7NORfRjZZ-GalB08OmgiIFnA3Hr5Mwl0GPiMtmVzVMylKcLpRHLlxNg75hoz0y-BbK17UJqVB9OuwlDHfr0Fxljc5BXMrhw8SaNJnsDHx5FKP2zSzjWubHk_3it9PzRVuyylw2pG6xmEUamPYNW3bEpYLMu9FCdE5X_v23FFWOiqz9Se2xdYfhP193k7t_zZKjAUdCvIiJ3LfgAFFt8dp8oVSgOmpxUL4i8irJi1Hgh3kGyMZGwZ0SHgrn-vHj0EBo5N9Jt5DVdhLnhafDxssj-1CEF5vij79m3fEp0Q3bDKuG2_60jnO2V-kKxZj8h3JgawoSX8WV_xizjL6j3y9i9Ttf92py9uXaUvFu6iLMroKWIg_frMg_13Y-8alT-GYxMdgRepWqZOmPYbtzsW8WJDto7UE96V1rtI2OV-H2wa_T79QJ_p9w9UCaekjw3hvicRBrYtmDS-V0jxju5FMLDrxRUnU8YQqhsIUsu2pkC10CUni7IgPcepziZZ2FvbGTVzrp8AI0bBw8IYL93TdSEQwsl2LoJ0_ARPwPrVw-XbUcX-oNq5vLb2buHueE1_IndCCxywtwq8AchwFXk0sV75U0nNuUbeDP5591nT-fZINHnRckMiUST-ek"
+              },
+              {
+                "enabled": true,
+                "name": "Accept",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVjMWU3ZjEzYjUxOGMxZmVlYWI5NTVhM2Q5NjViMDBlNGZhYjQyYjMwNWQyODJmOTkzNjdhYjQ5MjM2ODg4YWI3ZWY0MTZmYWQyNjIxOTcxIn0.eyJhdWQiOiIxIiwianRpIjoiNWMxZTdmMTNiNTE4YzFmZWVhYjk1NWEzZDk2NWIwMGU0ZmFiNDJiMzA1ZDI4MmY5OTM2N2FiNDkyMzY4ODhhYjdlZjQxNmZhZDI2MjE5NzEiLCJpYXQiOjE2MjQyMDM5MzcsIm5iZiI6MTYyNDIwMzkzNywiZXhwIjoxNjU1NzM5OTM3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.h5-kAJ63_kG-O_lPXSeuvx2Jacbh7uTsuJS2dzCHUXwTDYM9q1qgay3JO1c0yq3pVfFDS8QG6iioWnTCa4Tq9bT7lNTcKzirQW_KH8T9PNlPG9kcTO0ONl24Pee1haINVEKFLHJJ32pZD6MB9N4NyORmPh_b_iwn1C8m_-w0htVcFHY0hr7hEfNMhKxQ-90sXvu13-QRWSHQrKpJjgsphY5xRua-3PdVjWp4D3apFBTKsWQsfsKUBqOEicdwl2rQA1lpSZw3EX4Zt5xHC6ohrEVAiPTH8ZcIsm89iV8jeeU3MpbNcZ2oGCWPJnwjsORH0iZn6qSFe0A9rR1Eh9LEfAW7Jd-FuH2oQ-hxhPPQgGL751FyssT5Ted_HmLpMirECt3ZIFMPecKr0VzCvBTZaD-HXe-6-MN7X54LsDpK8kfgxjULbNTyVs_GQcFWMGDzaBqydy-Scp1VUBu236o_A04ctlOKO8HsQlL4p-SNlHoIZ7WtN9JylqD5I3Pgtho4E6cC-cmiKAWdNI2h6PeIQq9vow5vaLWRA_6ZYl7AfEszjrQv7jusQrIN40vgKBCs065sa7ZwpvRuRG7Fym5zl8DS2bEq6FbPz8xPY3wgWomM-Oti7rVxofCQDawPbbANSQ88Qd4oAzTjc8opHqS_GH6T1UlSfxF2CNDK_tsNrVg"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/api/v1/loans"
+            },
+            "id": "60fbfd1b-6368-43e0-8e3a-ddd37788b993",
+            "name": "Loans History",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk1NGVkM2NiOGNlYzM1NWE2ZDBmMThmM2ZhMWJmNDRkNTEyYWUzMzQ4MThmNzIyNzYxNzI4ZGZmMTlhZGEzYWFhZTBlNWZkNTJiMGM0YmM4In0.eyJhdWQiOiIxIiwianRpIjoiOTU0ZWQzY2I4Y2VjMzU1YTZkMGYxOGYzZmExYmY0NGQ1MTJhZTMzNDgxOGY3MjI3NjE3MjhkZmYxOWFkYTNhYWFlMGU1ZmQ1MmIwYzRiYzgiLCJpYXQiOjE2MjQyMDM2NjgsIm5iZiI6MTYyNDIwMzY2OCwiZXhwIjoxNjU1NzM5NjY4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.AcYST3BcjaLBlfP37oUZeHYL8qRVkCGlElV41_h45Q3RVMulW-e_MQA4Uvf7bp-Yz1sxvgBAIPUc19VSheahJfm19seFXFGdA7jX-j4VK1vCFlq2aGZwj-fzF6edkS66Zip2o9QBvIffbZRSHWXYzt-hqe_aKJmddHu54tQUmAxHakNjz_Mcj8rvO4a_iL2FKfE8SQhLBxHRCIeBUAr0lTrKlj1qIAoVYveQPEvQ2ABYHBfSwqu8-8Wc7TkbFaD47Jr6J87Kn4wumN2OhuVr-KoLdx2dUpfdDgp62UqfCnHUwFeiIQiYlI3KbbZ6Rnkqr8btmg02kxd_fKg3EdLqBjG-XL5C-2YsBVI6uFkHnesX9NKX0CiB-JFNVcLzlpPWX2bOChFO0XsTJQo2hpvJxBmnsxGDNUFt9vyd6_RMVfH4tPjnoHlHLkBRjgVUsxDRTYJcudgyzCMUI6GqlO7tRAedLsFcItTDd4sOPr3Mj-cbRUMrkx40oZpHBWZFe1pUR2gwNUdldpFCHwvRNsLvuwI5fcK_-SNBh1A0AEdkq0SDHnHqmuz3EjS2jXE-VrqjXaSAKo05vhuDzxBrjOfOzsasUUnepZhpqO01bcssFSeNV-gNCzN40WAyjhDbsw0aPAgNyKWF0ucoMej8exFD8UJbqJoV9kVX2keP7JxkvCU"
+              },
+              {
+                "enabled": true,
+                "name": "Accept",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "full_name",
+                    "value": "rohit"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "email",
+                    "value": "rohit.mca2011@gmail.com"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "password",
+                    "value": "rohit@123"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/api/v1/register"
+            },
+            "id": "b954df45-a055-4d47-a131-b0397cb46804",
+            "name": "Login",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "full_name",
+                    "value": "rohit"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "email",
+                    "value": "rohit.mca2011%40gmail.com"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "password",
+                    "value": "rohit%40123"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/api/v1/register"
+            },
+            "id": "cbb45424-0deb-4727-aae1-3af48e10af6c",
+            "name": "Register",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "repayment_amount",
+                    "value": "22000"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "repayment_method",
+                    "value": "Cash Deposit"
+                  },
+                  {
+                    "name": "approved_amount",
+                    "value": "5000"
+                  },
+                  {
+                    "name": "currency",
+                    "value": "ruppes"
+                  },
+                  {
+                    "name": "loan_tenor",
+                    "value": "5"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/api/v1/repayments/create"
+            },
+            "id": "bf41cbcf-690c-44ad-b879-88560f6e5a33",
+            "name": "Repayment Loan",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Bearer",
+                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdlMWVmNTVmMGQ4MmI2MWI5ZmNkZTQ1YWQ0ZTkwNDQxZWU4YzBlNWE0ZTNiNTg2NTc1NDAzYWQxYmYwNWMzYzZkOTQ5ODU3MTFkNWIzY2JiIn0.eyJhdWQiOiIxIiwianRpIjoiN2UxZWY1NWYwZDgyYjYxYjlmY2RlNDVhZDRlOTA0NDFlZThjMGU1YTRlM2I1ODY1NzU0MDNhZDFiZjA1YzNjNmQ5NDk4NTcxMWQ1YjNjYmIiLCJpYXQiOjE2MjQyMDMzMjAsIm5iZiI6MTYyNDIwMzMyMCwiZXhwIjoxNjU1NzM5MzIwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.HEpBJvlWo8mxmUTsbbIXRRIXEBCoRW6sVEWpHUPAmMg-B7vzx7NORfRjZZ-GalB08OmgiIFnA3Hr5Mwl0GPiMtmVzVMylKcLpRHLlxNg75hoz0y-BbK17UJqVB9OuwlDHfr0Fxljc5BXMrhw8SaNJnsDHx5FKP2zSzjWubHk_3it9PzRVuyylw2pG6xmEUamPYNW3bEpYLMu9FCdE5X_v23FFWOiqz9Se2xdYfhP193k7t_zZKjAUdCvIiJ3LfgAFFt8dp8oVSgOmpxUL4i8irJi1Hgh3kGyMZGwZ0SHgrn-vHj0EBo5N9Jt5DVdhLnhafDxssj-1CEF5vij79m3fEp0Q3bDKuG2_60jnO2V-kKxZj8h3JgawoSX8WV_xizjL6j3y9i9Ttf92py9uXaUvFu6iLMroKWIg_frMg_13Y-8alT-GYxMdgRepWqZOmPYbtzsW8WJDto7UE96V1rtI2OV-H2wa_T79QJ_p9w9UCaekjw3hvicRBrYtmDS-V0jxju5FMLDrxRUnU8YQqhsIUsu2pkC10CUni7IgPcepziZZ2FvbGTVzrp8AI0bBw8IYL93TdSEQwsl2LoJ0_ARPwPrVw-XbUcX-oNq5vLb2buHueE1_IndCCxywtwq8AchwFXk0sV75U0nNuUbeDP5591nT-fZINHnRckMiUST-ek"
+              },
+              {
+                "enabled": true,
+                "name": "Accept",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVjMWU3ZjEzYjUxOGMxZmVlYWI5NTVhM2Q5NjViMDBlNGZhYjQyYjMwNWQyODJmOTkzNjdhYjQ5MjM2ODg4YWI3ZWY0MTZmYWQyNjIxOTcxIn0.eyJhdWQiOiIxIiwianRpIjoiNWMxZTdmMTNiNTE4YzFmZWVhYjk1NWEzZDk2NWIwMGU0ZmFiNDJiMzA1ZDI4MmY5OTM2N2FiNDkyMzY4ODhhYjdlZjQxNmZhZDI2MjE5NzEiLCJpYXQiOjE2MjQyMDM5MzcsIm5iZiI6MTYyNDIwMzkzNywiZXhwIjoxNjU1NzM5OTM3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.h5-kAJ63_kG-O_lPXSeuvx2Jacbh7uTsuJS2dzCHUXwTDYM9q1qgay3JO1c0yq3pVfFDS8QG6iioWnTCa4Tq9bT7lNTcKzirQW_KH8T9PNlPG9kcTO0ONl24Pee1haINVEKFLHJJ32pZD6MB9N4NyORmPh_b_iwn1C8m_-w0htVcFHY0hr7hEfNMhKxQ-90sXvu13-QRWSHQrKpJjgsphY5xRua-3PdVjWp4D3apFBTKsWQsfsKUBqOEicdwl2rQA1lpSZw3EX4Zt5xHC6ohrEVAiPTH8ZcIsm89iV8jeeU3MpbNcZ2oGCWPJnwjsORH0iZn6qSFe0A9rR1Eh9LEfAW7Jd-FuH2oQ-hxhPPQgGL751FyssT5Ted_HmLpMirECt3ZIFMPecKr0VzCvBTZaD-HXe-6-MN7X54LsDpK8kfgxjULbNTyVs_GQcFWMGDzaBqydy-Scp1VUBu236o_A04ctlOKO8HsQlL4p-SNlHoIZ7WtN9JylqD5I3Pgtho4E6cC-cmiKAWdNI2h6PeIQq9vow5vaLWRA_6ZYl7AfEszjrQv7jusQrIN40vgKBCs065sa7ZwpvRuRG7Fym5zl8DS2bEq6FbPz8xPY3wgWomM-Oti7rVxofCQDawPbbANSQ88Qd4oAzTjc8opHqS_GH6T1UlSfxF2CNDK_tsNrVg"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
