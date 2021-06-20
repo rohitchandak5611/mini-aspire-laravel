@@ -26,3 +26,10 @@ https://github.com/rohitchandak5611/mini-aspire-laravel/blob/master/Mini-aspire-
 
 (E) PHP version 7.1 +
 
+(F) APi created for
+1 ) User Registration 
+(2) User Login - Authentication token
+(3) Create new Loan - With Auth token
+(4) List all loan as well user wise loan display- With Auth token
+(5) Loan repayment -With Auth token
+
